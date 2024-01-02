@@ -1,4 +1,5 @@
 void main() {
+  // 변수 선언 -----------------------
   print("hello");
 
   // 컴파일시 타입 지정
@@ -28,4 +29,46 @@ void main() {
 
   final e;
   e = "강민";
+
+  // 변수 타입 -----------------------
+  var giveMeFive = true;
+  var numbers = [
+    1,
+    2,
+    3,
+    if (giveMeFive) 5,
+  ];
+
+  if (giveMeFive) {
+    numbers.add(5);
+  }
+
+  var name2 = "강민";
+  var age = 10;
+  var greeting = "Hello. my name is $name2, I'm ${age + 2}";
+
+  var oldFriends = [
+    '이하성',
+    '도원준',
+  ];
+  var newFriends = [
+    '강민',
+    for (var friend in oldFriends) "🔥 $friend",
+  ];
+
+  var players = {
+    "강민" : 19,
+    "도원준" : 19,
+  };
+
+  var numbers1 = {
+    1,
+    2,
+    3,
+    4,
+  };
+  numbers1.add(1);
+  numbers1.add(1);
+  numbers1.add(1);
+  numbers1.add(1);
 }
