@@ -71,4 +71,17 @@ void main() {
   numbers1.add(1);
   numbers1.add(1);
   numbers1.add(1);
+
+  sayHello(
+    age : 19,
+    name : "강민",
+  );
 }
+
+// 함수 -----------------------
+
+String sayHello({
+  String? name,
+  int? age,
+}) =>
+    "Hi, my name is $name";
